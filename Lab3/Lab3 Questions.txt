@@ -1,0 +1,24 @@
+1) What was the content of the returned header? Do you see a 200 OK?
+
+<head>
+<meta charset="utf-8">
+<title>Tachun Lin, Ph.D.: Home Page</title>
+<style title="currentStyle" media="screen">
+		@import "style.css";
+</style>
+
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<script src="js/script.js"></script>
+<script src="js/ganalytic.js"></script>
+</head>
+
+- Yes, I see HTTP/1.1 200 OK as the first thing returned. 
+
+2) What is the last modified date/time? 
+- The last modified date/time is Mon, 05 Oct 2020 01:42:52 GMT. 
+
+3) In terminal, telnet replies "unable to connect to remote host. In Wireshark, the info says HTTP/1.1 304 Not Modified. 
+
+4) What is the code you see this time in the command prompt/capture? Do you still get 200 OK? 
+- In the command prompt, telnet replies it is unable to connect to the address 136.176.85.152: operation time out. Unable to connect to remote host. In the WireShark capture, within the HTTP entries, when I follow the HTTP stream, it says 304 not modified status code once again. 

@@ -1,0 +1,18 @@
+Gavin Forsberg - Lab 2 Questions
+
+1) What is the IP address of www.bradley.edu? 
+- IP Address of Bradley University: 52.2.159.182
+2) Do you see www.bradley.edu in the captured data frame? If not, what do you see? 
+- www.bradley.edu does show up in the captured data frame as the 'host'. This is underneath the get request. 
+3) What is the size of this data frame? 
+- 414 bytes captured 
+4) In the same data frame, how many bytes are transmitted in the application layer (HTTP)?
+- File Data: 178 bytes 
+5) How many "GET"' requests are there to fetch the whole content (including text, images, etc) in this page? 
+- Two total get requests. "GET / HTTP/1.1." and "GET /js/script.js HTTP/1.1". 
+6) What does it mean when receiving "HTTP/1.1 200 OK"?
+- 200 is a status code for HTTP meaning that the request was successfully received, understood, and accepted. Standard for HTTP.
+7) How many "GET" requests are required to fetch the content in this page? 
+- There is only one GET request this time. 
+8) What can you observe (in terms of differences) from the exercises 1-2 and 1-3?
+- The overall data seems a lot smaller and especially when following the data. It also has a 304 status code for "not modified." There is no reason to retransmit the data since it hasn't changed. 
